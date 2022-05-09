@@ -94,7 +94,7 @@ const MintPage = ({ collection }) => {
       .catch((err) => {
         set_minting(false);
         toast(
-          `Opps..., ${err?.message.substr(0, 28) || "something went wrong"}`,
+          `Opps..., ${err?.message.substr(0, 32) || "something went wrong"}`,
           {
             style: {
               background: "red",
